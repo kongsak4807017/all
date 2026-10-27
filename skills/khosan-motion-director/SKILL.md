@@ -11,13 +11,13 @@ Turn a verified KHOSAN Time brief into a purposeful, reusable motion plan and wo
 
 ## Mandatory workflow
 1. Read project Brand Context, AGENT.md, storyboard and user constraints. Source validation precedes motion for news.
-2. Read `references/motion-router.md` and `references/template-shortlist.md`; check the up-to-date source catalog `CATALOG.en.md` and `catalog.json` in this repository.
+2. Read `references/motion-router.md`, `references/template-shortlist.md`, and `references/editorial-video-qa.md`; check the up-to-date source catalog `CATALOG.en.md` and `catalog.json` in this repository.
 3. For each scene identify: semantic intent (hook/evidence/timeline/data/emotion/CTA), portrait or landscape, visual assets, Thai text length, 2D/3D demands, delivery and render environment.
 4. Rank candidate motion families by: semantic fit 35%, legibility 25%, feasibility 20%, brand match 10%, cost/performance 10%. Prefer simple animation when a complex engine adds no explanatory value.
 5. Mark all chosen templates `reference-only` until the actual template code/package and license have been checked. For the selected source, inspect its linked GitHub repo, exact commit, asset requirements, license, and .motion instructions before using code. Never assume catalog listing contains source.
 6. Output `motion-plan.json`, `storyboard.json`, `layers.json`, design tokens, source attribution/rights manifest, a scene-specific implementation plan, and preview-ready code. Do not treat a design proposal as tested code.
 7. Use review gate: storyboard/motion plan first; then implement; then preview/inspect sampled frames and timing; render only when requested/approved.
-8. Log source URL, commit/ref, license status, integration decisions and missing assets. No fabricated rights or download capabilities.
+8. Log source URL, commit/ref, license status, integration decisions and missing assets. Do not declare finished solely after successful FFmpeg render: inspect actual frames, scene motion, Thai subtitle safe zones, and editorial source-image relevance; produce contact-sheet QA.\n9. If a template listing says 'coming soon' or is demo-only (notably MotionGit 3D Book #3), say so and use an original, clearly differentiated implementation only if requested. No fabricated rights or download capabilities.
 
 ## Renderer/engine selection
 - **CSS/WAAPI**: simple fades, slides, lower thirds, Ken Burns; no build required.
